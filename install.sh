@@ -113,7 +113,7 @@ install_xray-ui() {
             exit 1
         fi
         echo -e "The latest version of xray-ui is detected: ${last_version}，start installation"
-        wget -N --no-check-certificate -O /usr/local/xray-ui-linux-${arch}.tar.gz https://github.com/jvdi/xray-ui/releases/download/${last_version}/xray-ui-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/xray-ui-linux-${arch}.tar.gz https://github.com/jvdi/xray-ui/releases/download/0.3.1/xray-ui-linux-${arch}.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Downloading xray-ui failed，please make sure your server can download the Github file${plain}"
             exit 1
